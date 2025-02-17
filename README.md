@@ -42,7 +42,7 @@ This is a Memory Match Game project developed as part of the Full Stack Developm
 - `index.html`: The main HTML file for the game.
 - `style.css`: The CSS file for styling the game.
 - `game.js`: The JavaScript file containing game logic.
-- `assets/`: Directory for images and sounds (if any).
+- `Responsive-images/`: Responsive images in different devices.
 
 ## Credits
 
