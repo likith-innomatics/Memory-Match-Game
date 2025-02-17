@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" href="https://store-images.s-microsoft.com/image/apps.54588.14090654178473619.aa2706f7-9244-4d37-b59f-3f87f7589476.6a5a6db1-70ba-4b57-a879-7f9264cd3a40?h=1280" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <div id="landing-page" class="landing-page animate__animated animate__fadeIn">
+            <h1 class="animate__animated animate__bounceIn">Memory Match Game</h1>
+            <div class="category-buttons">
+                <button data-category="fruits" class="animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                    🍎 Fruits
+                </button>
+                <button data-category="animals" class="animate__animated animate__fadeInUp" style="animation-delay: 0.3s">
+                    🐼 Animals
+                </button>
+                <button data-category="emojis" class="animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                    😀 Emojis
+                </button>
+                <button data-category="planets" class="animate__animated animate__fadeInUp" style="animation-delay: 0.5s">
+                    🌍 Planets
+                </button>
+                <button data-category="landmarks" class="animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+                    🗽 Landmarks
+                </button>
+            </div>
+        </div>
+
+        <!-- Game Page -->
+        <div id="game-page" class="game-page hidden">
+            <div class="game-header animate__animated animate__fadeInDown">
+                <div class="score">🏆 Score: <span id="score">0</span></div>
+                <div class="timer">⏱️ Time: <span id="timer">30</span>s</div>
+                <button id="back-button" class="back-button">← Back to Menu</button>
+            </div>
+            
+            <div id="game-grid" class="game-grid animate__animated animate__fadeIn"></div>
+
+            <!-- Game Over Modal -->
+            <div id="game-over-modal" class="modal hidden">
+                <div class="modal-content animate__animated animate__zoomIn">
+                    <h2 id="game-over-title">Game Over!</h2>
+                    <p>Final Score: <span id="final-score">0</span></p>
+                    <button id="play-again" class="animate__animated animate__bounceIn" style="animation-delay: 0.3s">
+                        🎮 Play Again
+                    </button>
+                    <button id="change-category" class="animate__animated animate__bounceIn" style="animation-delay: 0.4s">
+                        🔄 Change Category
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
